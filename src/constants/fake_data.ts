@@ -1,14 +1,6 @@
-interface Song {
-    title: string,
-    artist: string,
-    album: string,
-    year: number,
-    genre: string,
-    times_played: number,
-    last_played: number
-}
+import { songType } from "../types/types";
 
-const songs: Song[] = [
+const songs: songType[] = [
     {
         title: "Song 1",
         artist: "Artist 1",
