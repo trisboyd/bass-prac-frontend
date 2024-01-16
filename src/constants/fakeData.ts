@@ -1,6 +1,6 @@
 import { songType } from "../types/types";
 
-const songs: songType[] = [
+export const songs: songType[] = [
     {
         title: "Song 1",
         artist: "Artist 1",
