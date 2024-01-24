@@ -27,6 +27,24 @@ export const songs: songType[] = [
         genre: "Rock",
         times_played: 2,
         last_played: 10
+    },
+    {
+        title: "Song 4",
+        artist: "Artist 4",
+        album: "Album 4",
+        year: 2003,
+        genre: "Rock",
+        times_played: 3,
+        last_played: 15
+    },
+    {
+        title: "Song 5",
+        artist: "Artist 5",
+        album: "Album 5",
+        year: 2004,
+        genre: "Rock",
+        times_played: 4,
+        last_played: 20
     }
 
 ]
