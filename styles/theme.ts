@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import bass_image from "../public/bass_image.jpg"
 
 const theme = createTheme({
   palette: {
@@ -6,7 +7,7 @@ const theme = createTheme({
       default: '#000000',
     },
     mode: 'light',
-    primary: {
+    primary: {  
       light: '#FFFFFF',
       main: '#00253E',
     },
@@ -29,6 +30,21 @@ const theme = createTheme({
       light: '#F7C9C6',
       main: '#DD2415',
       dark: '#E95500',
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundImage: `url(${bass_image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          margin: 0,
+          padding: 0,
+          minHeight: '100vh', // Ensure full height
+        },
+      },
     },
   },
 });

@@ -2,19 +2,19 @@ import { Container, Box, Typography } from "@mui/material";
 
 export default function Title({ data }) {
     const styles = {
-        background: 'rgb(252, 252, 252, 0.1)',
-        borderRadius: '5px', 
+        margin: '30px, auto',
+        width: '100%',
+        zIndex: 100,
     }
   return (
-    <Box m={3} sx={styles}>
+    <Container sx={styles} maxWidth="lg">
       <Container
-        maxWidth="xl"
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        <Typography variant="h1" sx={{ color: "white" }}>
+        <Typography variant="h1" sx={{ color: "white", textAlign: 'center' }}>
           {data.title}
         </Typography>
       </Container>
-    </Box>
+    </Container>
   );
 }

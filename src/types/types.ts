@@ -12,3 +12,8 @@ export type songUpdateType = {
     times_played: number
     last_played: number
 }
+
+export type buttonType = {
+    text: String
+    path: String
+}
