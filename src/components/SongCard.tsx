@@ -29,7 +29,7 @@ export const SongCard = ({ song }) => {
           {song.album}
         </Typography>
         <Typography variant="h5" sx={styles.text}>
-          {song.release_date}
+          {song.year}
         </Typography>
       </CardContent>
   );

@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 export default function MenuButton({ data }) {
   const router = useRouter();
   const onClick = () => {
-    router.push(data.path);
+    data.path ? router.push(data.path) : data.onClick();
   };
 
   const styles = {

@@ -4,8 +4,15 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { AppProps } from "next/app";
 import bassImage from "../../public/bass_image.jpg";
 import Image from "next/image";
+import MenuButton from "../components/MenuButton";
 
 export default function App({ Component, pageProps }: AppProps) {
+    // TODO: this a placeholder for a more robust menu
+    const homeData = {
+        text: 'Home',
+        path: '/',
+    }
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -25,19 +32,8 @@ export default function App({ Component, pageProps }: AppProps) {
             transform: 'translate(-50%, -50%)',
             opacity: 0.7,
           }}
-        //   style={{
-        //     position: 'absolute',
-        //     top: '50%',
-        //     left: '50%',
-        //     transform: 'translate(-50%, -50%)',
-        //     width: '100%',
-        //     height: '100%',
-        //     maxWidth: '1400px',
-        //     objectFit: 'cover',
-        //     opacity: 0.8,
-        //     zIndex: -1,
-        //   }}
         />
+        <MenuButton data ={homeData} />
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Component {...pageProps} />
         </div>
