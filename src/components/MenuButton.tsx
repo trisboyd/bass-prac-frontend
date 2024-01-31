@@ -10,7 +10,7 @@ export default function MenuButton({ data }) {
   const styles = {
     fontSize: "30px",
     padding: "16px",
-    width: "100%",
+    width: data.width ? data.width : "100%",
     height: "100%",
     color: "#9AE89D",
     border: "1px solid rgba(154, 232, 157, 0.5)",
