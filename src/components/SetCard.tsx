@@ -22,7 +22,9 @@ export default function SetCard({ data }) {
   const styles = {
     card: {
       border: "1px solid white",
+      borderRadius: "10px",
       opacity: played ? '0.5' : '1',
+      margin: theme.spacing(2),
     },
     text: {
       color: theme.palette.primary.light,
@@ -34,7 +36,7 @@ export default function SetCard({ data }) {
   };
 
   return (
-    <CardContent>
+    <CardContent sx={styles.card}>
       <Container disableGutters sx={styles.container}>
         <Typography variant="h2" sx={styles.text}>
           {song.title}

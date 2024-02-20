@@ -17,3 +17,11 @@ export type buttonType = {
     text: String
     path: String
 }
+
+export type inputType = {
+    title: string,
+    artist: string,
+    album: string,
+    genre: string,
+    year: number,
+}
